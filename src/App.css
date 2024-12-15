@@ -1,0 +1,121 @@
+.navbar-logo {
+  width: 330px;
+  height: 70px;
+}
+
+.nav-link-custom {
+  color: #171717;
+  font-weight: bold;
+}
+
+.logosmall {
+  width: 100px;
+  height: 100px;
+}
+
+.horizontal-lines-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-line {
+  flex: 1;
+  border: 2px solid #d31216;
+  margin: 0 10px;
+}
+
+.btn-custom {
+  background-color: #d31216;
+  border-color: #d31216;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  background-color: #ffffff;
+  border-color: #d31216;
+  color: #d31216;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+/* ---card inicio--- */
+
+.btn-inicio {
+  background: rgb(250, 250, 250);
+  font-size: 16px;
+  border: 1px solid rgb(68, 68, 68);
+  color: rgb(0, 0, 0);
+  padding: 7px 10px;
+  
+  border-radius: 0.3rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-inicio:hover {
+  background: rgb(200, 200, 200);
+}
+
+.btn-inicio img:first-child {
+  width: 30px;
+}
+
+.btn-inicio img:nth-child(2) {
+  width: 5px;
+  height: 20px;
+}
+
+.img-logo {
+  width: 30px;
+  height: 20px;
+}
+
+.card-inicio {
+  width: 600px;
+}
+
+.logo-inicio {
+  height: 60px;
+}
+
+.title-inicio {
+  color: rgb(68, 68, 68);
+  
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-disabled {
+  height: 35px;
+  border: 1px solid rgb(68, 68, 68);
+  background: rgb(195, 195, 195);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+}
+
+.terms-conditions {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.terms-conditions span {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.modal-fade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
