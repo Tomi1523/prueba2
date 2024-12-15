@@ -1,8 +1,8 @@
+// src/api.js
 import { Listing } from "../interfaces/types";
 import axios from "axios";
 
-const API_URL = "/api/properties";
-
+const API_URL = import.meta.env.VITE_API_BASE_URL || "/api/properties";
 
 export const getProperties = async (page: number = 1, limit: number = 10): Promise<Listing[]> => {
   try {
@@ -14,7 +14,6 @@ export const getProperties = async (page: number = 1, limit: number = 10): Promi
   }
 };
 
-
 export const getPropertiesById = async (id: string): Promise<Listing> => {
   try {
     const response = await axios.get(`${API_URL}/${id}`);
@@ -24,7 +23,6 @@ export const getPropertiesById = async (id: string): Promise<Listing> => {
     throw error;
   }
 };
-
 
 export const updatePropierties = async (listing: Listing): Promise<Listing> => {
   try {
@@ -40,7 +38,6 @@ export const updatePropierties = async (listing: Listing): Promise<Listing> => {
   }
 };
 
-
 export const addProperties = async (listing: Listing): Promise<Listing> => {
   try {
     const response = await axios.post(API_URL, listing, {
@@ -54,7 +51,6 @@ export const addProperties = async (listing: Listing): Promise<Listing> => {
     throw error;
   }
 };
-
 
 export const searchAddress = async (fullAddress: string) => {
   try {

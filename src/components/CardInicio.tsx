@@ -7,6 +7,7 @@ import colombiaFlag from "../assets/colombia.png";
 import mexicoFlag from "../assets/mexico.png";
 import puertoRicoFlag from "../assets/puertorico.png";
 import uaeFlag from "../assets/emiratosarabes.png";
+import logoSmall from "../assets/logoSmall.svg";
 
 import logoanimated from "../assets/logoanimated.gif";
 
@@ -157,6 +158,11 @@ const CardInicio: React.FC = () => {
                           className="btn-inicio btn btn-primary w-100"
                           onClick={GoInicio}
                         >
+                          <img
+                            src={logoanimated}
+                            className="img-logo"
+                            alt="Atlas Prof"
+                          />{" "}
                          
                           Ir al menu
                         </button>
